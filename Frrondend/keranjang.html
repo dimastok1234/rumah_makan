@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang | Warung Makan Rindu Menganti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Rindu Menganti</div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="kategori.html">Kategori</a></li>
+                <li><a href="produk.html"> Produk</a></li>
+                <li><a href="keranjang.html" class="active">Keranjang</a></li>
+                <li><a href="home.html" class="btn-login">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bagian Keranjang -->
+    <section class="keranjang">
+        <h1>🛒 Keranjang Belanja</h1>
+        <p>Daftar produk yang Anda pilih:</p>
+
+        <table class="tabel-keranjang">
+            <thead>
+                <tr>
+                    <th>Produk</th>
+                    <th>Harga</th>
+                    <th>Jumlah</th>
+                    <th>Total</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nasi Goreng Laut</td>
+                    <td>Rp 25.000</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>Rp 25.000</td>
+                    <td><button class="hapus-btn">Hapus</button></td>
+                </tr>
+                <tr>
+                    <td>Udang Bakar</td>
+                    <td>Rp 35.000</td>
+                    <td><input type="number" value="2" min="1"></td>
+                    <td>Rp 70.000</td>
+                    <td><button class="hapus-btn">Hapus</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total-container">
+            <h2>Total Belanja: Rp 95.000</h2>
+            <a href="checkout.html" class="checkout-btn">Lanjut ke Pembayaran</a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Warung Makan Rindu Menganti. All rights reserved.</p>
+    </footer>
+</body>
+</html>

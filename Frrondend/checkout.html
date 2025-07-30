@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Warung Makan Rindu Menganti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Rindu Menganti</div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="kategori.html">Kategori</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="keranjang.html">Keranjang</a></li>
+                <li><a href="login.html" class="btn-login">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bagian Checkout -->
+    <section class="checkout">
+        <h1>💳 Halaman Pembayaran</h1>
+        <p>Isi data pengiriman dan pilih metode pembayaran Anda</p>
+
+        <form class="checkout-form">
+            <!-- Data Pengiriman -->
+            <h2>Detail Pesanan</h2>
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Nama lengkap Anda" required>
+
+            <label>Keterangan</label>
+            <textarea placeholder="Masukkan keterangan" required></textarea>
+
+            <label>Nomor  meja</label>
+            <input type="text" placeholder="no meja" required>
+
+            <!-- Metode Pembayaran -->
+            <h2>Metode Pembayaran</h2>
+            <div class="metode">
+                <label><input type="radio" name="metode" value="Cash" required> Bayar cash</label><br>
+                <label><input type="radio" name="metode" value="Transfer Bank"> Transfer Bank</label><br>
+                <label><input type="radio" name="metode" value="E-Wallet"> E-Wallet (OVO, Gopay, Dana)</label>
+            </div>
+
+            <!-- Tombol -->
+            <a href="payment.html" class="checkout-btn">Konfirmasi Pesanan</a>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Warung Makan Rindu Menganti. All rights reserved.</p>
+    </footer>
+
+    <!-- Script: Simulasi redirect -->
+    <script>
+        document.querySelector('.checkout-form').addEventListener('submit', function(e){
+            e.preventDefault();
+            alert("✅ Pesanan Anda berhasil dibuat! Terima kasih telah memesan di Warung Makan Rindu Menganti.");
+            window.location.href = "home.html"; // bisa diarahkan ke halaman terima kasih
+        });
+    </script>
+</body>
+</html>

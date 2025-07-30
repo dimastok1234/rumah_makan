@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Warung Makan Rindu Menganti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+    <div class="login-container">
+        <h2>Login ke Akun Anda</h2>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Masukkan email Anda" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Masukkan password" required>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p>Belum punya akun? <a href="#">Daftar</a></p>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // Supaya halaman tidak reload
+            // Ambil nilai input
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            // (opsional) Bisa tambahkan pengecekan sederhana
+            if (email && password) {
+                alert("Login berhasil!"); 
+                window.location.href = "dashboard.html"; // 🔥 redirect ke dashboard
+            } else {
+                alert("Email dan Password harus diisi!");
+            }
+        });
+    </script>
+
+</body>
+</html>

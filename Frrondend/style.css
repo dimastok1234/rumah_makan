@@ -1,0 +1,385 @@
+/* 🔵 Style Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+}
+
+/* 🔵 Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2E8B57;
+    padding: 15px 30px;
+    color: white;
+}
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+header nav ul li a:hover {
+    color: yellow;
+}
+.btn-login {
+    background: yellow;
+    color: black !important;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+/* 🔵 Hero */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+    color: black;
+}
+.hero h1 {
+    font-size: 36px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.btn {
+    background: yellow;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* 🔵 Produk */
+.produk {
+    text-align: center;
+    padding: 30px;
+}
+.produk-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card button {
+    background: #2E8B57;
+    color: white;
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card button:hover {
+    background: #246b44;
+}
+
+/* 🔵 Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2E8B57;
+    color: white;
+    margin-top: 30px;
+}
+
+/* 🔵 Login Page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f1f1f1;
+}
+.login-container {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #2E8B57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-container button:hover {
+    background: #246b44;
+}
+.dashboard .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;   /* agar gambar tidak gepeng */
+    border-radius: 10px 10px 0 0; /* atas melengkung, bawah lurus */
+    margin-bottom: 10px;
+}
+/* 🔵 Produk */
+.produk {
+    text-align: center;
+    padding: 30px;
+}
+
+/* ✅ Semua card akan berjajar ke samping */
+.produk-container,
+.dashboard-container,   /* tambahkan ini supaya dashboard ikut sejajar */
+.kategori-container,    /* kalau ada halaman kategori juga ikut rapi */
+.produk-list {          /* kalau ada halaman produk */
+    display: flex;
+    flex-direction: row;      /* sejajar ke samping */
+    justify-content: center;  /* rata tengah */
+    gap: 20px;                /* jarak antar card */
+    flex-wrap: wrap;          /* kalau layar kecil, otomatis turun */
+}
+
+/* Style Card */
+.card {
+    background: white;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card button {
+    background: #2E8B57;
+    color: white;
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card button:hover {
+    background: #246b44;
+}
+/* 🔵 Keranjang */
+.keranjang {
+    padding: 30px;
+    text-align: center;
+}
+
+.tabel-keranjang {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tabel-keranjang th, 
+.tabel-keranjang td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.tabel-keranjang th {
+    background: #2E8B57;
+    color: white;
+}
+
+.tabel-keranjang input {
+    width: 50px;
+    text-align: center;
+}
+
+.hapus-btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hapus-btn:hover {
+    background: #cc0000;
+}
+
+/* 🔵 Total dan Checkout */
+.total-container {
+    margin-top: 20px;
+}
+.checkout-btn {
+    background: #2E8B57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.checkout-btn:hover {
+    background: #246b44;
+}
+/* 🔵 Checkout */
+.checkout {
+    padding: 30px;
+    text-align: center;
+}
+
+.checkout-form {
+    width: 50%;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.checkout-form h2 {
+    margin-top: 20px;
+    color: #2E8B57;
+}
+
+.checkout-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkout-form textarea {
+    height: 80px;
+    resize: none;
+}
+
+.metode {
+    margin: 10px 0;
+}
+
+.bayar-btn {
+    background: #2E8B57;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.bayar-btn:hover {
+    background: #246b44;
+}
+/* 🔵 Konfirmasi Pesanan */
+.konfirmasi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: #f8f8f8;
+}
+
+.konfirmasi-box {
+    background: white;
+    text-align: center;
+    padding: 40px;
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.konfirmasi-box h1 {
+    color: #2E8B57;
+    margin-bottom: 10px;
+}
+
+.konfirmasi-box p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.info-pesanan {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.info-pesanan h3 {
+    margin-top: 0;
+    color: #2E8B57;
+}
+
+.info-pesanan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-pesanan ul li {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.home-btn {
+    display: inline-block;
+    background: #2E8B57;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-btn:hover {
+    background: #246b44;
+}
+
